@@ -15,7 +15,7 @@
         enterCombo {
             bindings = <&kp ENTER>;
             key-positions = <38 39>;
-            layers = <1 0 2>;
+            layers = <0 1 2>;
         };
 
         capsLockCombo {
@@ -37,6 +37,22 @@
     keymap {
         compatible = "zmk,keymap";
 
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            label = "Base";
+            bindings = <
+&none  &kp Q      &kp W      &kp F           &kp P      &kp B        &kp J          &kp L      &kp U            &kp Y      &kp SEMICOLON  &none
+&none  &kp LS(A)  &kp LC(R)  &kp LA(S)       &kp LG(T)  &kp G        &kp M          &kp RG(N)  &kp RA(E)        &kp RC(I)  &kp RS(O)      &none
+&none  &kp Z      &kp X      &kp C           &kp D      &kp V        &kp K          &kp H      &kp COMMA        &kp DOT    &kp FSLH       &none
+                             &kp LEFT_SHIFT  &mo 1      &kp SPACE    &kp BACKSPACE  &mo 2      &kp RIGHT_SHIFT
+            >;
+        };
+
         lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -50,22 +66,6 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none                  &kp LEFT      &kp UP                &kp DOWN  &kp RIGHT  &none
 &none  &trans        &trans        &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE      &kp C_BRIGHTNESS_AUTO  &kp C_BRI_UP  &kp C_BRIGHTNESS_DEC  &trans    &trans     &none
                                    &kp LGUI      &trans        &kp SPACE       &kp BACKSPACE          &trans        &kp RALT
-            >;
-        };
-
-        default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            label = "Base";
-            bindings = <
-&none  &kp Q      &kp W      &kp F           &kp P      &kp B        &kp J          &kp L      &kp U            &kp Y      &kp SEMICOLON  &none
-&none  &kp LS(A)  &kp LC(R)  &kp LA(S)       &kp LG(T)  &kp G        &kp M          &kp RG(N)  &kp RA(E)        &kp RC(I)  &kp RS(O)      &none
-&none  &kp Z      &kp X      &kp C           &kp D      &kp V        &kp K          &kp H      &kp COMMA        &kp DOT    &kp FSLH       &none
-                             &kp LEFT_SHIFT  &mo 0      &kp SPACE    &kp BACKSPACE  &mo 2      &kp RIGHT_SHIFT
             >;
         };
 
