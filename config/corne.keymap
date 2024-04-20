@@ -67,9 +67,9 @@
 
             label = "Base";
             bindings = <
-&none  &kp Q              &kp W         &kp F            &kp P            &kp B        &kp J          &kp L             &kp U             &kp Y         &kp SEMICOLON       &none
-&none  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_GUI T  &kp G        &kp M          &hmr RIGHT_GUI N  &hmr RIGHT_ALT E  &hmr RCTRL I  &hmr RIGHT_SHIFT O  &none
-&none  &kp Z              &kp X         &kp C            &kp D            &kp V        &kp K          &kp H             &kp COMMA         &kp DOT       &kp FSLH            &none
+&none  &kp Q              &kp W         &kp E            &kp R            &kp T        &kp Y          &kp U             &kp I             &kp O         &kp P                       &none
+&none  &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G        &kp H          &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &kp Z              &kp X         &kp C            &kp V            &kp B        &kp N          &kp M             &kp COMMA         &kp DOT       &kp FSLH                    &none
                                         &kp LEFT_SHIFT   &mo 2            &kp SPACE    &kp BACKSPACE  &mo 1             &kp RIGHT_SHIFT
             >;
         };
@@ -99,10 +99,10 @@
 
             label = "Raise";
             bindings = <
-&none  &kp EXCL      &kp AT     &kp HASH  &kp DLLR           &kp PRCNT    &kp CARET      &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &none
-&none  &kp QUESTION  &kp SLASH  &kp SQT   &kp DOUBLE_QUOTES  &kp GRAVE    &kp MINUS      &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH         &none
-&none  &trans        &trans     &trans    &trans             &kp TILDE    &kp UNDER      &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE         &none
-                                &kp LGUI  &trans             &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
+&none  &kp EXCL  &kp AT                &kp HASH       &kp DLLR           &kp PRCNT    &kp CARET      &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &none
+&none  &kp PIPE  &kp NON_US_BACKSLASH  &kp SQT        &kp DOUBLE_QUOTES  &kp GRAVE    &kp MINUS      &kp EQUAL  &kp LBKT              &kp RBKT               &kp COLON        &none
+&none  &trans    &trans                &kp LESS_THAN  &kp GREATER_THAN   &kp TILDE    &kp UNDER      &kp PLUS   &kp LBRC              &kp RBRC               &kp QUESTION     &none
+                                       &kp LGUI       &trans             &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
             >;
         };
     };
